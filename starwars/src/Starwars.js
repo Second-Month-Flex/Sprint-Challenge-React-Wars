@@ -8,15 +8,23 @@ const Div = styled.div`
   margin: 0 auto;
 `;
 
+const H1 = styled.h1`
+  text-decoration: underline;
+`;
+
+const H3 = styled.h3`
+  color: red;
+`;
+
 function Starwars(info) {
   return (
     <Div>
-      <h1>Name: {info.name} </h1>
-      <h3>Height:{info.height}</h3>
-      <h3> {info.mass}kg</h3>
-      <h3>Hair color:{info.hair_color} </h3>
-      <h3>Eye Color: {info.eye_color}</h3>
-      <h3> Gender: {info.gender}</h3>
+      <H1>Name: {info.name} </H1>
+      <H3>Height:{info.height}</H3>
+      <H3> {info.mass}kg</H3>
+      <H3>Hair color:{info.hair_color} </H3>
+      <H3>Eye Color: {info.eye_color}</H3>
+      <H3> Gender: {info.gender}</H3>
     </Div>
   );
 }
